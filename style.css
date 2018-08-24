@@ -124,6 +124,7 @@ button:focus {
         rgba(0, 0, 0, 0.3)
       ),
       url("./cook-2364264_1920.jpg");
+      background-position: 0px -47px;
   }
   .banner {
     top: 50%;
