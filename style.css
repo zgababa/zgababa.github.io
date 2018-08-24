@@ -44,76 +44,33 @@ h4 {
   font-size: 26px;
 }
 
+.signup {
+  margin-top: 10px;
+}
 
-.signup .button {
-  color: rgb(255, 255, 255);
-  padding-bottom: 13px;
-  padding-top: 14px;
+.button, .email {
+  padding: 15px;
   border-radius: 4px;
   border-width: initial;
   border-style: none;
   border-color: initial;
   border-image: initial;
-  background: rgb(108, 216, 122);
   transition: all 0.15s ease 0s;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1em;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  background: rgb(108, 216, 122);
 }
 
 .email {
-  padding-bottom: 13px;
-  padding-top: 12px;
-  padding-left: 10px;
-  border-radius: 4px;
-  border-style: none;
   width: 300px;
-  transition: all 0.15s ease 0s;
-  font-size: 18px;
-  color: #524b4b;
-  line-height: 18px;
 }
 
 ::placeholder {
   color: rgb(187, 187, 187);
   opacity: 1;
-  font-size: 18px;
-  padding: 15px;
-}
-
-button {
-  width: 280px;
-}
-
-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-button:hover span {
-  padding-right: 25px;
-}
-
-button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -134,19 +91,11 @@ button:focus {
   }
   .subtitle, .signup {
     margin-left: 0px;
-    font-size: 2.1em;
   }
   h1 {
     font-size: 2.7em;
   }
-  .email {
+  .email, .signup .button {
     padding: 30px;
-
-  }
-  .signup button {
-    padding-top: 29px;
-    padding-bottom: 35px;
-    font-size: 0.8em;
-    width: 400px;
   }
 }
