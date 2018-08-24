@@ -115,3 +115,22 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
+@media screen and (max-width: 1024px) {
+  body {
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("./tomatoes.jpg");
+  }
+  .subtitle, .signup {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 2.1em;
+  }
+  h1 {
+    font-size: 2.9em;
+  }
+}
