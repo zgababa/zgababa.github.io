@@ -127,7 +127,7 @@ button:focus {
       background-position: 0px -47px;
   }
   .banner {
-    top: 50%;
+    top: 40%;
   }
   .subtitle {
     padding-left: 50px;
@@ -137,7 +137,16 @@ button:focus {
     font-size: 2.1em;
   }
   h1 {
-    font-size: 2.9em;
+    font-size: 2.7em;
   }
+  .email {
+    padding: 30px;
 
+  }
+  .signup button {
+    padding-top: 29px;
+    padding-bottom: 35px;
+    font-size: 0.8em;
+    width: 400px;
+  }
 }
