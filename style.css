@@ -10,9 +10,37 @@ body {
   background-attachment: fixed;
   font-family: 'IBM Plex Serif', serif;
   background-size: cover;
+  color: white;
 }
 
-.banner {
+ h1 {
+   text-align: center;
+ }
+
+ .corpus {
+   margin-top: 50%;
+ }
+
+ .corpus-text {
+   margin-top: 5%;
+ }
+
+ @media (min-width: 576px) {
+   body {
+     background:
+       linear-gradient(
+         rgba(0, 0, 0, 0.3),
+         rgba(0, 0, 0, 0.3)
+       ),
+       url("./cook-2364264_1920.jpg");
+   }
+   p {
+     font-size: 2rem;
+   }
+ }
+
+
+/* .banner {
   color: white;
   position: fixed;
   top: 32%;
@@ -98,4 +126,4 @@ h4 {
   .email, .signup .button {
     padding: 30px;
   }
-}
+} */
