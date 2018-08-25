@@ -1,21 +1,41 @@
 <html>
 <head>
-  <title>Your Website Title</title>
-
+  <title>Course simple et rapide</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="merci.css">
+  <link rel="icon" href="icon.png" />
 </head>
-<body>
-  <h1>Merci de votre soutient !</h1>
-  Vous êtes actuellement le 4578ème sur la file d'attente  partagez et montez dans le classement !
+<body class="container">
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+  <div class="corpus">
+    <h1 class="display-3">Merci pour votre inscription !</h1>
+    <h2>Vous êtes actuellement le <u>4578ème</u> dans la file d'attente<h2>
+    <h2><strong>Partagez</strong> notre site pour remonter dans le classement<h2>
+    <div
+      class="fb-share-button"
+      data-href="https://zgababa.github.io/"
+      data-layout="button"
+      data-size="large"
+      data-mobile-iframe="true"
+    >
+        <a
+          target="_blank"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fzgababa.github.io%2F&amp;src=sdkpreparse"
+          class="fb-xfbml-parse-ignore">
+          Partager
+        </a>
+    </div>
+  </div>
+
+  <script>
+  (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&autoLogAppEvents=1&version=v3.1&appId=587069218042846';
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-  <div class="fb-share-button" data-href="https://zgababa.github.io/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fzgababa.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
-
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 </html>
