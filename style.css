@@ -32,28 +32,32 @@ p {
 }
 
 .input-email, .submit-email {
-  padding: 15px;
+  padding: 20px;
   border-radius: 4px;
   border-width: initial;
   border-style: none;
   border-color: initial;
   border-image: initial;
   transition: all 0.15s ease 0s;
-  font-size: 1em;
 }
 
-.submit-email {
-  color: rgb(255, 255, 255);
-  background: rgb(108, 216, 122);
-}
-
-.submit-email:hover {
-  cursor: pointer;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.input-email {
+  margin-bottom: 3%;
 }
 
 .form {
   margin-top: 2%;
+  font-size: 2.3em;
+}
+
+.submit-email {
+ color: rgb(255, 255, 255);
+ background: rgb(108, 216, 122);
+}
+
+.submit-email:hover {
+ cursor: pointer;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 @media (min-width: 768px) {
@@ -88,5 +92,34 @@ p {
 
   p {
     font-size: 1.2em;
+  }
+
+  .form {
+    font-size: 1.2em;
+  }
+
+  .submit-email span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .submit-email span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .submit-email:hover span {
+    padding-right: 25px;
+  }
+
+  .submit-email:hover span:after {
+    opacity: 1;
+    right: 0;
   }
 }
